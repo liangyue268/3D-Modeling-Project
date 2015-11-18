@@ -1,4 +1,4 @@
-package java3D;
+package mod3D;
 
 public class Shape {
 	private int x, y, z, color;
