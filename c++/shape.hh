@@ -9,10 +9,13 @@ private:
 	Color color;
 protected:
 	//print the shape
-	print() {
-
+	virtual print() { 
+		cout << "print shape." << '\n';
 	}
+
 public:
+	Shape(int x, int y, int z) : x(x), y(y), z(z) { }
+
 	Color getColor() {
 		return color;
 	}

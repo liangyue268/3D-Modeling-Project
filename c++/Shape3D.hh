@@ -1,9 +1,11 @@
 #ifndef SHAPE3D_HH_
 #define SHAPE3D_HH_
 
-class Shape3D {
+class Shape3D : public Shape {
 public:
-	//what we need do for this function?
+	Shape3D(int x, int y, int z) : Shape(x, y, z) { }
+
+	//TODO: what we need do for this function?
 	virtual void translate() = 0;
 
 	//@param (x, y, z) is the direction that the Shape needs to rotate

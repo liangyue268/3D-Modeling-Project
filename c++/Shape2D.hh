@@ -1,9 +1,11 @@
 #ifndef SHAPE2D_HH_
 #define SHAPE2D_HH_
 
-class Shape2D {
+class Shape2D : public shape {
 public:
-	//what we need do for this function?
+	Shape2D(int x, int y) : Shape(x, y, 0) { }
+
+	//TODO: what we need do for this function?
 	virtual void translate() = 0;
 
 	//@param (x, y) is the direction that the Shape needs to rotate
