@@ -1,5 +1,5 @@
 package java3D;
 
-public class Shape3D {
+public abstract class Shape3D {
 
 }
