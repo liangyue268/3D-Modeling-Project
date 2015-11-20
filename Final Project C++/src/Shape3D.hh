@@ -1,6 +1,7 @@
 #ifndef SHAPE3D_HH_
 #define SHAPE3D_HH_
 
+#include "Shape.hh"
 class Shape3D : public Shape {
 public:
 	Shape3D(int x, int y, int z) : Shape(x, y, z) { }

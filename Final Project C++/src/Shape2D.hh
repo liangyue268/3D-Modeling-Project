@@ -1,7 +1,8 @@
 #ifndef SHAPE2D_HH_
 #define SHAPE2D_HH_
 
-class Shape2D : public shape {
+#include "Shape.hh"
+class Shape2D : public Shape {
 public:
 	Shape2D(int x, int y) : Shape(x, y, 0) { }
 

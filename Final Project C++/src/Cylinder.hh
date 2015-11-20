@@ -3,7 +3,7 @@
 
 class Cylinder : public Shape3D {
 private:
-	double raduis;
+	double radius;
 	double height;
 public:
 	Cylinder(double r, double h, int x = 0, int y = 0, int z = 0) : Shape3D(x, y, z), radius(r), height(h) { }

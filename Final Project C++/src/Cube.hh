@@ -1,6 +1,7 @@
 #ifndef CUBE_HH_
 #define CUBE_HH_
 
+#include "Shape3D.hh"
 class Cube : public Shape3D {
 private:
 	double length;

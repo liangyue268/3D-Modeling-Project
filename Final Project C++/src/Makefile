@@ -1,5 +1,5 @@
-3DModel.exe: main.o shape.o
-	g++ main.o shape.o -o 3DModel.exe
+3DModel.exe: main.o
+	g++ main.o -o 3DModel.exe
 
 main.o: main.cc
 	g++ -c main.cc

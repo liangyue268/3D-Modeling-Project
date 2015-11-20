@@ -1,6 +1,9 @@
 #ifndef SHAPE_HH_
 #define SHAPE_HH_
 
+#include <iostream>
+using namespace std;
+
 class Shape {
 private:
 	int x;
@@ -9,7 +12,7 @@ private:
 	Color color;
 protected:
 	//print the shape
-	virtual print() { 
+	virtual void print() {
 		cout << "print shape." << '\n';
 	}
 
@@ -20,7 +23,7 @@ public:
 		return color;
 	}
 
-	setColor(Color c) {
+	void setColor(Color c) {
 		color = c;
 	}
 };
