@@ -16,10 +16,10 @@ public:
 	virtual void scale(double amp) = 0;
 
 	//@return the intersect of this and that Shape2D
-	virtual Shape2D intersect(Shape2D that) = 0;
+	//virtual Shape2D intersect(Shape2D that) = 0;
 
 	//@return the substract of this and that Shape2D
-	virtual Shape2D substract(Shape2D that) = 0;
+	//virtual Shape2D substract(Shape2D that) = 0;
 
 	//@return the volume of the Shape
 	virtual double getVolume() = 0;

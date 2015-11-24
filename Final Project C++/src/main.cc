@@ -3,5 +3,7 @@
 using namespace std;
 
 int main(){
-	cout << "test";
+	Cube cube(1,2,3);
+	cube.print();
+	cout << cube.getArea();
 }

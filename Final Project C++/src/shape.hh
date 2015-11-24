@@ -4,19 +4,20 @@
 #include <iostream>
 using namespace std;
 
+typedef int Color;
 class Shape {
 private:
 	int x;
 	int y;
 	int z;
 	Color color;
-protected:
+
+public:
 	//print the shape
 	virtual void print() {
 		cout << "print shape." << '\n';
 	}
 
-public:
 	Shape(int x, int y, int z) : x(x), y(y), z(z) { }
 
 	Color getColor() {
