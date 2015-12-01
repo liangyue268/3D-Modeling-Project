@@ -8,7 +8,15 @@
 #ifndef POLYGON_HH_
 #define POLYGON_HH_
 
+#include "Shape2D.hh"
+#include <iostream>
+using namespace std;
 
+
+class Polygon : public Shape2D {
+
+
+};
 
 
 

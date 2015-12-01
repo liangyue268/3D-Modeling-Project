@@ -9,7 +9,15 @@
 #define POLYHEDRON_HH_
 
 
+#include "Shape3D.hh"
+#include <iostream>
+using namespace std;
 
+
+class Polyhedron : public Shape3D {
+
+
+};
 
 
 #endif /* POLYHEDRON_HH_ */

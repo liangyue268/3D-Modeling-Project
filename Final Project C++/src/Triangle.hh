@@ -8,6 +8,15 @@
 #ifndef TRIANGLE_HH_
 #define TRIANGLE_HH_
 
+#include "Shape2D.hh"
+#include <iostream>
+using namespace std;
+
+
+class Triangle : public Shape2D {
+
+
+};
 
 
 

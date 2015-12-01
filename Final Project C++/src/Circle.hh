@@ -13,7 +13,7 @@
 using namespace std;
 
 
-class Circle : public Shape3D {
+class Circle : public Shape2D {
 
 
 };
