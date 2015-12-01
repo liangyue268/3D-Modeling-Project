@@ -1,6 +1,6 @@
 package mod3D;
 
-public class Shape {
+public abstract class Shape {
 	private int x, y, z, color;
 	
 	private void print(){}
