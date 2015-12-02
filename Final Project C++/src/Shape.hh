@@ -19,7 +19,7 @@ public:
 		cout << "print shape." << '\n';
 	}
 
-	Shape(int x, int y, int z) : x(x), y(y), z(z) { }
+	Shape(int x, int y, int z, Color c) : x(x), y(y), z(z), color(c) { }
 
 	Color getColor() {
 		return color;

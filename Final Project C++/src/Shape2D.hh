@@ -4,7 +4,7 @@
 #include "Shape.hh"
 class Shape2D : public Shape {
 public:
-	Shape2D(int x, int y) : Shape(x, y, 0) { }
+	Shape2D(int x, int y, Color c) : Shape(x, y, 0, c) { }
 
 	//TODO: what we need do for this function?
 	virtual void translate() = 0;
