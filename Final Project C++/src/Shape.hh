@@ -14,7 +14,7 @@ private:
 
 public:
 	//print the shape
-	virtual void print() {
+	virtual void print(const char* filename) {
 		cout << "print shape." << '\n';
 	}
 

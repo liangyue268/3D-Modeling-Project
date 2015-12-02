@@ -4,6 +4,6 @@ using namespace std;
 
 int main(){
 	Cube cube(1,2,3);
-	cube.print();
-	cout << cube.getArea();
+	cube.print("asd.stl");
+	cout << "The Area of " << cube << " is " << cube.getArea();
 }
