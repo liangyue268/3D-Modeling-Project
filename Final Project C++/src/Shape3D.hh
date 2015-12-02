@@ -4,7 +4,7 @@
 #include "Shape.hh"
 class Shape3D : public Shape {
 public:
-	Shape3D(int x, int y, int z) : Shape(x, y, z) { }
+	Shape3D(int x, int y, int z, Color c) : Shape(x, y, z, c) { }
 
 	//TODO: what we need do for this function?
 	virtual void translate() = 0;

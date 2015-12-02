@@ -4,21 +4,22 @@
 #include <iostream>
 using namespace std;
 
+const double PI = 3.1415926535898;
 typedef int Color;
 class Shape {
 private:
+	Color color;
+protected:
 	int x;
 	int y;
 	int z;
-	Color color;
-
 public:
 	//print the shape
-	virtual void print() {
+	virtual void print(const char* filename) {
 		cout << "print shape." << '\n';
 	}
 
-	Shape(int x, int y, int z) : x(x), y(y), z(z) { }
+	Shape(int x, int y, int z, Color c) : x(x), y(y), z(z), color(c) { }
 
 	Color getColor() {
 		return color;
