@@ -6,14 +6,7 @@ class Shape2D : public Shape {
 public:
 	Shape2D(int x, int y) : Shape(x, y, 0) { }
 
-	//TODO: what we need do for this function?
-	virtual void translate() = 0;
-
-	//@param (x, y) is the direction that the Shape needs to rotate
-	virtual void rotate(int x, int y) = 0;
-
-	//@param amp is the multiplier of the scale
-	virtual void scale(double amp) = 0;
+//(x & y are the coordinates of the center point)
 
 	//@return the intersect of this and that Shape2D
 	//virtual Shape2D intersect(Shape2D that) = 0;
@@ -22,10 +15,9 @@ public:
 	//virtual Shape2D substract(Shape2D that) = 0;
 
 	//@return the volume of the Shape
-	virtual double getVolume() = 0;
 
 	//@return the area of the Shape
-	virtual double getArea() = 0;
+	virtual double getArea() {};
 };
 
 #endif
