@@ -7,11 +7,11 @@ using namespace std;
 typedef int Color;
 class Shape {
 private:
+	Color color;
+protected:
 	int x;
 	int y;
 	int z;
-	Color color;
-
 public:
 	//print the shape
 	virtual void print(const char* filename) {
