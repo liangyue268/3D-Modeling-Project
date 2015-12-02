@@ -14,7 +14,7 @@ public:
 	Rectangle(double l, double w, int x = 0, int y = 0) : Shape2D(x,y), length(l), width(w){}
 
 	double getArea(){
-		return l*w;
+		return length*width;
 	}
 
 };
