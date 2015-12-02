@@ -4,6 +4,7 @@
 #include <iostream>
 using namespace std;
 
+const double PI = 3.1415926535898;
 typedef int Color;
 class Shape {
 private:

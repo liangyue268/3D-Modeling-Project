@@ -2,6 +2,7 @@
 #define CYLINDER_HH_
 
 #include "Shape3D.hh"
+
 class Cylinder : public Shape3D {
 private:
 	double radius;
@@ -17,8 +18,7 @@ public:
 	}
 
 	double getVolume() { //V = pi*r^2*h
-		const double PI = 3.1415926535898;
-		return PI*radius*radius*height; //where is the best place to define PI???
+		return PI*radius*radius*height; //PI is defined in shape.hh, is that the best place?
 	}
 
 	double getArea() { //S = 2*pi*r*h + 2*pi*r^2
