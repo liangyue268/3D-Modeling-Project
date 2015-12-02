@@ -11,7 +11,7 @@ private:
 	double length;
 	double width;
 public:
-	Rectangle(double l, double w, int x = 0, int y = 0) : Shape2D(x,y), length(l), width(w){}
+	Rectangle(double l, double w, Color c, int x = 0, int y = 0) : Shape2D(x,y,c), length(l), width(w){}
 
 	double getArea(){
 		return length*width;
