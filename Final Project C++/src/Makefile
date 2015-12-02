@@ -16,6 +16,21 @@ Sphere.hh: Shape3D.hh
 Cylinder.hh: Shape3D.hh
 	touch Cylinder.hh
 
+Polyhedron.hh: Shape3D.hh
+	touch Polyhedron.hh
+
+Rectangle.hh: Shape2D.hh
+	touch Rectangle.hh
+
+Triangle.hh: Shape2D.hh
+	touch Triangle.hh
+
+Circle.hh: Shape2D.hh
+	touch Circle.hh
+
+Polygon.hh: Shape2D.hh
+	touch Polygon.hh
+
 Shape3D.hh: Shape.hh
 	touch Shape3D.hh
 
