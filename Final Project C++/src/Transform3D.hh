@@ -19,6 +19,15 @@ using namespace std;
 class Transform3D : public Shape3D {
 
 
+void Translate(Shape3D s, int transx, int transy, int transz){
+
+	s.x = s.x+transx;
+	s.y = s.y+transy;
+	s.z = s.z+transz;
+}
+
+
+
 void ScaleSphere(Sphere p, double s )	{  //Pass the method a Sphere and a scale double
 
 	p.radius = s*p.radius;
