@@ -10,7 +10,7 @@ public:
 	double radius;
 	double height;
 
-	Cylinder(double r, double h, int x = 0, int y = 0, int z = 0, int orientation[], Color c) : Shape3D(x, y, z, orientation,c), radius(r), height(h) { }
+	Cylinder(double r, double h, int orientation[], Color c, int x = 0, int y = 0, int z = 0) : Shape3D(x, y, z,orientation, c), radius(r), height(h) { }
 	
 
 

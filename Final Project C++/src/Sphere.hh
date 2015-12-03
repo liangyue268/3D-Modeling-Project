@@ -11,7 +11,7 @@ public:
 
 
 	//Shape3D(int x, int y, int z, int orientation[3], Color c)
-	Sphere(double r, int x = 0, int y = 0, int z = 0, int orientation[], Color c) : Shape3D(x, y, z, orientation,  c), radius(r) { }
+	Sphere(double r, int orientation[], Color c, int x = 0, int y = 0, int z = 0) : Shape3D(x, y, z, orientation,  c), radius(r) { }
 
 
 	double getVolume(){
