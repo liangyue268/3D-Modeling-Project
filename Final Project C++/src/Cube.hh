@@ -4,6 +4,7 @@
 #include "Shape3D.hh"
 #include <iostream>
 #include <fstream>
+#include <cmath>
 using namespace std;
 
 class Cube : public Shape3D {
@@ -14,14 +15,16 @@ public:
 
 	//Shape3D(int x, int y, int z, int orientation[3], Color c)
 
-	Cube(double l, double w, double h, int orientation[], Color c, int x = 0, int y = 0, int z = 0) : Shape3D(x, y, z, orientation,  c), length(l), width(w), height(h) {}
+	Cube(double l, double w, double h, int orientation[], Color c, int x = 0, int y = 0, int z = 0) : Shape3D(x, y, z, c, orientation), length(l), width(w), height(h) {}
 
 	//this should work even for translated cubes but not sure about strangely oriented cubes
 	bool isInside(double a, double b, double c){
-		if((x-(length/2) <= a <= x+(length/2)) && (y-(width/2) <= b <= y+(width/2)) && (z-(height/2) <= c <= z+(height/2))  )
-		return 1;
-		else
-		return 0;
+		if(abs(a - x <= (length / 2)) && abs(b - y <= (width / 2)) && abs(c - z <= (height / 2))) {
+			return true;
+		}
+		else {
+			return false;
+		}
 	}
 
 	double getVolume() {
