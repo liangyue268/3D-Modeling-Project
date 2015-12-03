@@ -14,10 +14,10 @@ public:
 
 	//Shape3D(int x, int y, int z, int orientation[3], Color c)
 
-	Cube(double l, double w, double h, int x = 0, int y = 0, int z = 0, int orientation[], Color c) : Shape3D(x, y, z, orientation,  c), length(l), width(w), height(h) {}
+	Cube(double l, double w, double h, int orientation[], Color c, int x = 0, int y = 0, int z = 0) : Shape3D(x, y, z, c, orientation), length(l), width(w), height(h) {}
 
 
-	bool isInside(){
+	bool isInside(int x, int y, int z){
 		return 1;
 	}
 
@@ -82,13 +82,11 @@ public:
 
 		file << "endsolid OpenSCAD_Model\n";
 	}
-
+*/
 	friend ostream& operator <<(ostream& s, const Cube& c) {
 		s << "cube(" << c.length << ", " << c.width << ", " << c.height << ")";
 		return s;
 	}
-
-*/
 };
 
 #endif

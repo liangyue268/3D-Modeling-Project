@@ -9,7 +9,6 @@ typedef int Color;
 class Shape {
 public:
 	Color color;
-
 	int x;
 	int y;
 	int z;

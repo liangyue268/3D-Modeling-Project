@@ -14,8 +14,6 @@ public:
 	//@return the substract of this and that Shape2D
 	//virtual Shape2D substract(Shape2D that) = 0;
 
-	//@return the volume of the Shape
-
 	//@return the area of the Shape
 	virtual double getArea() {};
 };
