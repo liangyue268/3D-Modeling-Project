@@ -10,9 +10,9 @@
 
 #include <iostream>
 class Point {
-private:
-	int _x, _y, _z;
 public:
+	int _x, _y, _z;
+
 	Point(int x, int y, int z) : _x(x), _y(y), _z(z) { }
 
 	int x() {
