@@ -17,6 +17,9 @@ public:
 	Cube(double l, double w, double h, int x = 0, int y = 0, int z = 0, int orientation[], Color c) : Shape3D(x, y, z, orientation,  c), length(l), width(w), height(h) {}
 
 
+	bool isInside(){
+		return 1;
+	}
 
 	double getVolume() {
 		return length * width * height;
