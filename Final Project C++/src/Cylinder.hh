@@ -2,6 +2,8 @@
 #define CYLINDER_HH_
 
 #include "Shape3D.hh"
+#include <iostream>
+using namespace std;
 
 class Cylinder : public Shape3D {
 public:

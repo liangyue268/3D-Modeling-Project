@@ -13,7 +13,6 @@ public:
 
 
 
-
 	//@return the intersect of this and that Shape3D
 	//virtual Shape3D intersect(Shape3D that) = 0;
 

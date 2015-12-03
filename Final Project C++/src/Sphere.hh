@@ -1,6 +1,8 @@
 #ifndef SPHERE_HH_
 #define SPHERE_HH_
 #include "Shape3D.hh"
+#include <iostream>
+using namespace std;
 
 class Sphere : public Shape3D {
 
