@@ -15,11 +15,11 @@ public:
 
 	//Shape3D(int x, int y, int z, int orientation[3], Color c)
 
-	Cube(double l, double w, double h, int orientation[], Color c, int x = 0, int y = 0, int z = 0) : Shape3D(x, y, z, c, orientation), length(l), width(w), height(h) {}
+	Cube(double l, double w, double h, Color c, int orientation[], Point p = Point(0, 0, 0)) : Shape3D(p, c, orientation), length(l), width(w), height(h) {}
 
 	//this should work even for translated cubes but not sure about strangely oriented cubes
 	bool isInside(double a, double b, double c){
-		if(abs(a - x <= (length / 2)) && abs(b - y <= (width / 2)) && abs(c - z <= (height / 2))) {
+		if(abs(a - center.x()) <= (length / 2) && abs(b - center.y()) <= (width / 2) && abs(c - center.z()) <= (height / 2)) {
 			return true;
 		}
 		else {

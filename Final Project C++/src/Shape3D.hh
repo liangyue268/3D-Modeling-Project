@@ -8,12 +8,16 @@ class Shape3D : public Shape {
 private:
 	int* orientation;
 public:
-	Shape3D(int x, int y, int z, Color c, int orientation[]) : Shape(x, y, z, c) {
+	Shape3D(Point p, Color c, int orientation[]) : Shape(p, c) {
 		this->orientation = new int[3];
 		for(int i = 0; i < 3; i++) {
 			this->orientation[i] = orientation[i];
 		}
 	}
+
+	virtual double getVolume() = 0;
+
+	virtual double getArea() = 0;
 
 	//@return the intersect of this and that Shape3D
 	//virtual Shape3D intersect(Shape3D that) = 0;
