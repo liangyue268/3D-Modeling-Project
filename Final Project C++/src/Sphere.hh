@@ -15,14 +15,21 @@ public:
 
 
 	double getVolume(){
-
+		return (4/3)*PI*radius*radius*radius;
 
 	}
 
-	double getArea(){}
+	double getArea(){
+		return 4*PI*radius*radius;
+	}
 
-
-	bool isInside(){}
+    //r^2 = (x-x0)^2 + (y-y0)^2 + (z-z0)^2
+	bool isInside(double a, double b, double c){
+		if((a-x)*(a-x) + (b-y)*(b-y)+(c-z)*(c-z) <= radius*radius)
+			return true;
+		else
+			return false;
+	}
 
 };
 
