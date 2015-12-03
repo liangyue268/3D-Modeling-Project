@@ -7,26 +7,15 @@
 using namespace std;
 
 class Cube : public Shape3D {
-private:
+public:
 	double length;
 	double width;
 	double height;
 
-public:
-	Cube(double l, double w, double h, int x = 0, int y = 0, int z = 0) : Shape3D(x, y, z), length(l), width(w), height(h) { }
+	//Shape3D(int x, int y, int z, int orientation[3], Color c)
 
-	//TODO: override all virtual functions
-	void translate() {
+	Cube(double l, double w, double h, int x = 0, int y = 0, int z = 0, int orientation[], Color c) : Shape3D(x, y, z, orientation,  c), length(l), width(w), height(h) {}
 
-	}
-
-	void rotate(int x, int y, int z) {
-
-	}
-
-	void scale(double amp) {
-
-	}
 
 
 	double getVolume() {
@@ -36,7 +25,7 @@ public:
 	double getArea() {
 		return 2 * (length * width + length * height + width * height);
 	}
-
+/*
 	void print(const char* filename) {
 		//cout << "print cube." << '\n';
 		//file << "      vertex " << length << ' ' << width << ' ' << height << '\n';
@@ -95,6 +84,8 @@ public:
 		s << "cube(" << c.length << ", " << c.width << ", " << c.height << ")";
 		return s;
 	}
+
+*/
 };
 
 #endif

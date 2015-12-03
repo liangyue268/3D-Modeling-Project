@@ -10,20 +10,33 @@
 
 
 #include "Shape3D.hh"
+
 #include <iostream>
 #include <fstream>
+
 using namespace std;
 
 class Transform3D : public Shape3D {
 
 
+void ScaleSphere(Sphere p, double s )	{  //Pass the method a Sphere and a scale double
 
+	p.radius = s*p.radius;
 
+}
 
-void ScaleSphere(Sphere p, int s )	{  //Pass the method a Sphere and a scale int
+void ScaleCube(Cube c, double s){ //Pass the method a cube and a scale double.
 
+	c.length = s*c.length;
+	c.width = s*c.width;
+	c.height = s*c.height;
 
+}
 
+void ScaleCylinder(Cylinder c, double s){//Pass the method a cube and a scale double
+
+ c.radius  = s*c.radius;
+ c.height = s*c.height;
 
 }
 
