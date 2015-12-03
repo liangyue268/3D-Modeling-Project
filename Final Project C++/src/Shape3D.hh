@@ -9,9 +9,8 @@ public:
 	int  oR[3];
 
 //issue with passing orientation[3]; says ' cannot assign int* to int[3];
-	Shape3D(int x, int y, int z, int orientation[3], Color c) : Shape(x, y, z, c), oR(orientation){ }
-
-
+	//I think this shouls work with c++11
+Shape3D(int x, int y, int z, int orientation[3], Color c) : Shape(x, y, z, c) , oR{orientation[0], orientation[1], orientation[2]}{ }
 
 	//@return the intersect of this and that Shape3D
 	//virtual Shape3D intersect(Shape3D that) = 0;
