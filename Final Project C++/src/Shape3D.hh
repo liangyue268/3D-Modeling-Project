@@ -1,19 +1,17 @@
 #ifndef SHAPE3D_HH_
 #define SHAPE3D_HH_
-
+#include <iostream>
+using namespace std;
 #include "Shape.hh"
+
 class Shape3D : public Shape {
 public:
-	Shape3D(int x, int y, int z, Color c) : Shape(x, y, z, c) { }
+	int  oR[3];
 
-	//TODO: what we need do for this function?
-	virtual void translate() = 0;
+	Shape3D(int x, int y, int z, int orientation[3], Color c) : Shape(x, y, z, c) , oR(orientation){ }
 
-	//@param (x, y, z) is the direction that the Shape needs to rotate
-	virtual void rotate(int x, int y, int z) = 0;
 
-	//@param amp is the multiplier of the scale
-	virtual void scale(double amp) = 0;
+
 
 	//@return the intersect of this and that Shape3D
 	//virtual Shape3D intersect(Shape3D that) = 0;
