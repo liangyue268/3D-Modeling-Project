@@ -26,7 +26,12 @@ void Translate(Shape3D s, int transx, int transy, int transz){
 	s.z = s.z+transz;
 }
 
+void OrienationChange (Shape3D s, int x, int y, int z){
 
+	s.oR[0] = x;
+	s.oR[1] = y;
+	s.oR[2] = z;
+}
 
 void ScaleSphere(Sphere p, double s )	{  //Pass the method a Sphere and a scale double
 
