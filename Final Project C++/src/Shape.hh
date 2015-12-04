@@ -17,7 +17,9 @@ public:
 	Point center;
 
 	//pure virtual function to print a shape to STL format
-	virtual void print(const char* filename) = 0;
+	virtual void print(const char* filename) {
+		cout << "test";
+	}
 
 	//Constructor
 	Shape(Point p,  Color c) : center(p), color(c) { }
