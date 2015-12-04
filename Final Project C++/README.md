@@ -15,3 +15,5 @@ Carly Bean, Christopher Coyle, Yue Liang
   ![image](https://github.com/liangyue268/3D-Modeling-Project/raw/master/Final Project C++/UML/Main.jpg)
 2. Class Assignment  
   [Google Doc](https://docs.google.com/a/stevens.edu/document/d/1fsi3hjniJ_YA59Y-JGG6QX_aBoCmIR4YJftYXizY_mM/edit?usp=sharing)
+3. Project Specification  
+  [Google Doc](https://docs.google.com/document/d/1gvjVRlcqsxvCjgPDpTlV0QpnF7W6Xb3f6262AqQfj2s/edit?usp=sharing)
