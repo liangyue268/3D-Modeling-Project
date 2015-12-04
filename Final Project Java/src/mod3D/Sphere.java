@@ -5,6 +5,8 @@ public class Sphere extends Shape3D {
 
 public double radius;
 
+
+// Constructor
 public Sphere(double r, double orientation[], Color c, int center[]){
 	super(center, c, orientation);
 	radius = r;
