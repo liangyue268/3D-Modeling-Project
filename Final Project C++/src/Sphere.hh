@@ -29,7 +29,7 @@ public:
 	//For a given point (a,b,c) returns true if point is in the sphere, otherwise returns false
     //r^2 = (x-x0)^2 + (y-y0)^2 + (z-z0)^2
 	bool isInside(double a, double b, double c){
-		if((a-x)*(a-x) + (b-y)*(b-y)+(c-z)*(c-z) <= radius*radius)
+		if((a-center.x)*(a-center.x) + (b-center.y)*(b-center.y)+(c-center.z)*(c-center.z) <= radius*radius)
 			return true;
 		else
 			return false;
