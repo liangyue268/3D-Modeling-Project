@@ -6,7 +6,7 @@
 #include <iostream>
 using namespace std;
 
-//Represents a sphere shape, is a chile of class Shape3D
+//Represents a sphere shape, is a child of class Shape3D
 class Sphere : public Shape3D {
 
 public:
