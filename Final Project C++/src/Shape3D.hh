@@ -6,10 +6,10 @@ using namespace std;
 
 class Shape3D : public Shape {
 private:
-	int* orientation;
+	double* orientation;
 public:
-	Shape3D(Point p, Color c, int orientation[]) : Shape(p, c) {
-		this->orientation = new int[3];
+	Shape3D(Point p, Color c, double orientation[]) : Shape(p, c) {
+		this->orientation = new double[3];
 		for(int i = 0; i < 3; i++) {
 			this->orientation[i] = orientation[i];
 		}
