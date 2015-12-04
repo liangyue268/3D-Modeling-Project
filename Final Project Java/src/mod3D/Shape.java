@@ -1,31 +1,23 @@
 package mod3D;
 
+import java.awt.Color;
 import java.awt.Graphics;
 
 
 
 public abstract class Shape {
-	private int x, y, z, color, theta;
+	public int center[] = new int[3];
 	
-	private void print(){}
-	
-	public void getcolor(){}
-	
-	public void setcolor(){}
-	
-	public abstract void translate(int x, int y, int z);
-	
-	public abstract void rotate(int theta, int x, int y, int z);
-	
-	public abstract void scale(int x, int y, int z);
+	public Color c;
+
 	
 	
-	public abstract void union(int x, int y, int z);
-	
-	public abstract void substract(int x, int y, int z);
-	
-	public abstract void intersect(int x, int y, int z);
-	
+	Shape( int center[], Color c){
+		this.center[0] = center[0];
+		this.center[1] = center[1];
+		this.center[1] = center[1];
+		
+	}
 	
 
 }
