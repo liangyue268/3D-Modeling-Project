@@ -11,8 +11,7 @@ public:
 	double radius;
 	double height;
 
-	Cylinder(double r, double h, double orientation[], Color c, Point p) : Shape3D(p,orientation, c), radius(r), height(h) { }
-	
+	Cylinder(double r, double h, double orientation[], Color c, Point p = Point(0, 0, 0)) : Shape3D(p, c, orientation), radius(r), height(h) { }
 
 	bool isInside(double A, double B, double C) const { //(x/r)^2 + (y/r)^2 = 1
 		if((A/radius)*(A/radius) + (B/radius)*(B/radius) <= 1 && (height/2) + z <= C <= = z - (height/2)) //how can we access Z since it is private. make x, y, z protected??
@@ -28,7 +27,11 @@ public:
 	double getArea() { //S = 2*pi*r*h + 2*pi*r^2
 		return 2*PI*radius*height + 2*PI*radius*radius;
 	}
-	//TODO: override all virtual functions
+
+	double scale(double s) {
+		radius  = s*radius;
+		height = s*height;
+	}
 };
 
 

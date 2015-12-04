@@ -6,7 +6,7 @@ using namespace std;
 typedef int Color;
 int main(){
 	//possible client
-	int ori[3] = {1,1,1};
+	double ori[3] = {1,1,1};
 	Color c = 1;
 	Cube cube(1,2,3, c, ori);
 	//cube.print("asd.stl");
@@ -14,4 +14,6 @@ int main(){
 
 	Point p(1,2,3);
 	cout << p;
+
+
 }

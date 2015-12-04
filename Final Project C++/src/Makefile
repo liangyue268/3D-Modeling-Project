@@ -4,7 +4,7 @@
 main.o: main.cc
 	g++ -c main.cc
 
-main.cc: Cube.hh Sphere.hh Cylinder.hh
+main.cc: Cube.hh Sphere.hh Cylinder.hh Transfrom3D.hh
 	touch main.cc
 
 Cube.hh: Shape3D.hh
@@ -36,3 +36,9 @@ Shape3D.hh: Shape.hh
 
 Shape2D.hh: Shape.hh
 	touch Shape2D.hh
+	
+Shape.hh: Point.hh
+	touch Shape.hh
+	
+Thansfrom3D.hh: Shape3D.hh
+	touch Transform3D.hh
