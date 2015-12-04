@@ -10,7 +10,7 @@ public class Transform3D {
 			
 			OrienationChange(d[i], Orientation[0], Orientation[1], Orientation[2]);
 			
-			Scale(d[i], scale);
+			Scale((Sphere) d[i], scale);
 				
 			
 			
