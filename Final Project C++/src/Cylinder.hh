@@ -10,7 +10,7 @@ public:
 	double radius;
 	double height;
 
-	Cylinder(double r, double h, int orientation[], Color c, int x = 0, int y = 0, int z = 0) : Shape3D(x, y, z,orientation, c), radius(r), height(h) { }
+	Cylinder(double r, double h, double orientation[], Color c, Point p = Point(0, 0, 0)) : Shape3D(p, c, orientation), radius(r), height(h) { }
 	
 
 	bool isInside(double A, double B, double C) const { //(x/r)^2 + (y/r)^2 = 1
@@ -27,7 +27,11 @@ public:
 	double getArea() { //S = 2*pi*r*h + 2*pi*r^2
 		return 2*PI*radius*height + 2*PI*radius*radius;
 	}
-	//TODO: override all virtual functions
+
+	double scale(double s) {
+		radius  = s*radius;
+		height = s*height;
+	}
 };
 
 

@@ -13,13 +13,11 @@ public:
 	double width;
 	double height;
 
-	//Shape3D(int x, int y, int z, int orientation[3], Color c)
-
-	Cube(double l, double w, double h, Color c, int orientation[], Point p = Point(0, 0, 0)) : Shape3D(p, c, orientation), length(l), width(w), height(h) {}
+	Cube(double l, double w, double h, Color c, double ori[], Point p = Point(0, 0, 0)) : Shape3D(p, c, ori), length(l), width(w), height(h) {}
 
 	//this should work even for translated cubes but not sure about strangely oriented cubes
-	bool isInside(double a, double b, double c){
-		if(abs(a - center.x()) <= (length / 2) && abs(b - center.y()) <= (width / 2) && abs(c - center.z()) <= (height / 2)) {
+	bool isInside(Point p){
+		if(abs(p.x() - center.x()) <= (length / 2) && abs(p.y() - center.y()) <= (width / 2) && abs(p.z() - center.z()) <= (height / 2)) {
 			return true;
 		}
 		else {
@@ -33,6 +31,12 @@ public:
 
 	double getArea() {
 		return 2 * (length * width + length * height + width * height);
+	}
+
+	void scale(double s) {
+		length = s*length;
+		width = s*width;
+		height = s*height;
 	}
 /*
 	void print(const char* filename) {

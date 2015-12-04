@@ -31,6 +31,10 @@ public:
 			return false;
 	}
 
+	void scale(double s) {
+		radius = s * radius;
+	}
+
 };
 
 #endif

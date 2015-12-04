@@ -8,60 +8,40 @@
 #ifndef TRANSFORM3D_HH_
 #define TRANSFORM3D_HH_
 
-
 #include "Shape3D.hh"
-
 #include <iostream>
-#include <fstream>
-
 using namespace std;
 
-class Transform3D : public Shape3D {
+class Transform3D {
+private:
+	Shape3D* d;
+	int n;
+public:
+	Transform3D(Shape3D d[], int n) : n(n) {
+		this->d = new Shape3D*[n];
+		for(int i = 0; i < n; i++) {
+			this->d[i] = &d[i];
+		}
+	}
 
+	void translate(Point trans){
+		for(int i = 0; i < n; i++) {
+			d[i].translate(trans);
+		}
+	}
 
-Transform3D(Shape3D [] d, int trans[], int Orientation[], double scale){
+	void changeOrientation(double x, double y, double z){
+		double ori[3] = {x, y, z};
+		for(int i = 0; i < n; i++) {
+			d[i].setOrientation(ori);
+		}
+	}
 
-}
-
-void Translate(Shape3D s, int transx, int transy, int transz){
-
-	s.x = s.x+transx;
-	s.y = s.y+transy;
-	s.z = s.z+transz;
-}
-
-void OrienationChange (Shape3D s, int x, int y, int z){
-
-	s.oR[0] = x;
-	s.oR[1] = y;
-	s.oR[2] = z;
-}
-
-void Scale(Sphere p, double s )	{  //Pass the method a Sphere and a scale double
-
-	p.radius = s*p.radius;
-
-}
-
-void Scale(Cube c, double s){ //Pass the method a cube and a scale double.
-
-	c.length = s*c.length;
-	c.width = s*c.width;
-	c.height = s*c.height;
-
-}
-
-void Scale(Cylinder c, double s){//Pass the method a cube and a scale double
-
- c.radius  = s*c.radius;
- c.height = s*c.height;
-
-}
-
-
-
-
+	void scale(double s) {  //Pass the method a Sphere and a scale double
+		for(int i = 0; i < n; i++) {
+			d[i].scale(s);
+		}
+	}
 };
-
 
 #endif /* TRANSFORM3D_HH_ */

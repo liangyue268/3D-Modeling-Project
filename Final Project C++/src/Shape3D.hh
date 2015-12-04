@@ -25,7 +25,19 @@ public:
 	//@return the substract of this and that Shape3D
 	//virtual Shape3D substract(Shape3D that) = 0;
 
+	void setOrientation(double ori[]) {
+		for(int i = 0; i < 3; i++) {
+			orientation[i] = ori[i];
+		}
+	}
 
+	void translate(Point trans) {
+		center = center + trans;
+	}
+
+	virtual void scale(double s) = 0;
+
+	virtual bool isInside(Point p) = 0;
 };
 
 #endif
