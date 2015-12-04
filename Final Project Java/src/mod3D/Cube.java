@@ -23,5 +23,5 @@ public class Cube extends Shape3D{
 	double getArea() {
 		return 2 * (length * width + length * height + width * height);
 	}
-	//test
+	//testagain
 }
