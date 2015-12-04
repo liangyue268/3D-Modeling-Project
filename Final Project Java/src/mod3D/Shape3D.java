@@ -11,7 +11,7 @@ public abstract class Shape3D extends Shape{
 		super(center, c);
 		this.orientation[0] = orientation[0];
 		this.orientation[1] = orientation[1];
-		this.orientation[1] = orientation[1];
+		this.orientation[2] = orientation[2];
 		
 		
 	}
