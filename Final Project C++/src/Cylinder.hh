@@ -10,7 +10,7 @@ public:
 	double radius;
 	double height;
 
-	Cylinder(double r, double h, int orientation[], Color c, int x = 0, int y = 0, int z = 0) : Shape3D(x, y, z,orientation, c), radius(r), height(h) { }
+	Cylinder(double r, double h, double orientation[], Color c, int x = 0, int y = 0, int z = 0) : Shape3D(x, y, z,orientation, c), radius(r), height(h) { }
 	
 
 	bool isInside(double A, double B, double C) const { //(x/r)^2 + (y/r)^2 = 1

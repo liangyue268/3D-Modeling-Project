@@ -15,7 +15,7 @@ public:
 
 	//Shape3D(int x, int y, int z, int orientation[3], Color c)
 
-	Cube(double l, double w, double h, Color c, int orientation[], Point p = Point(0, 0, 0)) : Shape3D(p, c, orientation), length(l), width(w), height(h) {}
+	Cube(double l, double w, double h, Color c, int double[], Point p = Point(0, 0, 0)) : Shape3D(p, c, orientation), length(l), width(w), height(h) {}
 
 	//this should work even for translated cubes but not sure about strangely oriented cubes
 	bool isInside(double a, double b, double c){
