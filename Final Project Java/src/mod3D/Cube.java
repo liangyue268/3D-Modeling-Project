@@ -5,7 +5,7 @@ public class Cube extends Shape3D{
 
 	public double length, width, height;
 	
-	Cube(double l, double w, double h, Color c, double orientation[], int center[] ){
+	public Cube(double l, double w, double h, Color c, double orientation[], int center[] ){
 		
 		super(center, c, orientation);
 		

@@ -2,7 +2,7 @@ package mod3D;
 
 import java.awt.Color;
 
-public class Shape3D extends Shape{
+public abstract class Shape3D extends Shape{
 	
 	public double orientation[] = new double[3];
 		
