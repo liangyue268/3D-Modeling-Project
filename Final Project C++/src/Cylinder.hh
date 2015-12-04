@@ -2,6 +2,7 @@
 #define CYLINDER_HH_
 
 #include "Shape3D.hh"
+#include "Point.hh"
 #include <iostream>
 using namespace std;
 
@@ -10,11 +11,11 @@ public:
 	double radius;
 	double height;
 
-	Cylinder(double r, double h, double orientation[], Color c, int x = 0, int y = 0, int z = 0) : Shape3D(x, y, z,orientation, c), radius(r), height(h) { }
+	Cylinder(double r, double h, double orientation[], Color c, Point p) : Shape3D(p,orientation, c), radius(r), height(h) { }
 	
 
 	bool isInside(double A, double B, double C) const { //(x/r)^2 + (y/r)^2 = 1
-		if((A/radius)*(A/radius) + (B/radius)*(B/radius) <= 1 && (height/2) + z <= C <= z - (height/2)) //how can we access Z since it is private. make x, y, z protected??
+		if((A/radius)*(A/radius) + (B/radius)*(B/radius) <= 1 && (height/2) + z <= C <= = z - (height/2)) //how can we access Z since it is private. make x, y, z protected??
 			return true;
 		else
 			return false;
