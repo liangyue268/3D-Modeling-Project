@@ -53,7 +53,7 @@ int main(){
 
 	// Transform Shape Objects
 
-	Shape3D* d[3] = {cube1, sph1, cyl1};
+	Shape3D d[3] = {cube1, sph1, cyl1};
 
 	Transform3D t (d, 3);
 
