@@ -12,7 +12,7 @@
 #include <iostream>
 using namespace std;
 
-
+// A polygon is a Shape2D represented by a compilation of vertices, a long with the data associated with Shape2D
 class Polygon : public Shape2D {
 
 private:
