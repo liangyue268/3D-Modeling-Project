@@ -11,7 +11,19 @@ public class Render {
 		
 	int[] Rend(Cube c){
 		
-		int e[];
+		int e[] = {};
+	
+		return e; }	
+	
+	int[] Rend(Cylinder c){
+		
+		int e[] = {};
+	
+		return e; }
+	
+	int[] Rend(Sphere s){
+		
+		int e[] = {};
 	
 		return e; }	
 
