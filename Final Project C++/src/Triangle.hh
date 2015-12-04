@@ -6,7 +6,7 @@
 #include <cmath> //should this be included here or somewhere else?
 using namespace std;
 
-
+//Triangle is a Shape2D, represented by three (x,y) vertices, along with the data in Shape 2D
 class Triangle : public Shape2D {
 private:
 	int x1, y1;

@@ -1,8 +1,8 @@
 package mod3D;
 
 public class Transform3D {
-	
-	public Transform3D(Shape3D [] d, int trans[], int Orientation[], double scale, int numShapes){
+	Shape3D shape3D;
+	public Transform3D(Shape3D[] d, int trans[], int Orientation[], double scale, int numShapes){
 		
 		for(int i = 0 ; i < numShapes ; i++){
 			
@@ -10,10 +10,9 @@ public class Transform3D {
 			
 			OrienationChange(d[i], Orientation[0], Orientation[1], Orientation[2]);
 			
-			Scale(d[i], scale);
-				
-			
-			
+			// Statement below was showing error. Check if its the correct way
+			// Scale(d[i], scale);
+			Scale((Sphere) d[i], scale);
 		}
 		
 	}
