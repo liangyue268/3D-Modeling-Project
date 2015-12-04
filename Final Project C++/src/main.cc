@@ -31,7 +31,7 @@ int main(){
 
 			volumeCube1 = cube1.getVolume();
 
-	//		cout << "Area of cube1: " << areaCube1 << " Volume of cube1: " << volumeCube1 << endl;
+			cout << "Area of cube1: " << areaCube1 << " Volume of cube1: " << volumeCube1 << endl;
 
 
 
