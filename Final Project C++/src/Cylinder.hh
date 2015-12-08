@@ -17,8 +17,8 @@ public:
 	Cylinder(double r, double h, double orientation[], Color c, Point p = Point(0, 0, 0)) : Shape3D(p, c, orientation), radius(r), height(h) { }
 
 	//For a given point (A,B,C) returns true if point is in the cylinder, otherwise returns false
-	bool isInside(double A, double B, double C) { //(x/r)^2 + (y/r)^2 = 1   //can't be const bc of point
-		if((A/radius)*(A/radius) + (B/radius)*(B/radius) <= 1 && (height/2) + center.z() <= C <= center.z() - (height/2)) //how can we access Z since it is private. make x, y, z protected??
+	bool isInside(Point p) { //(x/r)^2 + (y/r)^2 = 1   //can't be const bc of point
+		if((p.x()/radius)*(p.x()/radius) + (p.y()/radius)*(p.y()/radius) <= 1 && (height/2) + center.z() <= p.z() <= center.z() - (height/2)) //how can we access Z since it is private. make x, y, z protected??
 			return true;
 		else
 			return false;
