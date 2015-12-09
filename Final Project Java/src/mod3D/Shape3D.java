@@ -5,6 +5,7 @@ import java.awt.Color;
 public abstract class Shape3D extends Shape{
 	
 	public double orientation[] = new double[3];
+	public Object radius;
 		
 	public Shape3D (int center[], Color c , double oreintation[] ){
 		
