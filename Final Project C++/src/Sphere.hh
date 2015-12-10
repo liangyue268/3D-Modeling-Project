@@ -14,7 +14,7 @@ public:
 
 
 	//Constructor
-	Sphere(double r, double orientation[], Color c, Point p) : Shape3D(p , orientation,  c), radius(r) { }
+	Sphere(double r, Color c, double orientation[], Point p) : Shape3D(p, c, orientation), radius(r) { }
 
 	//Returns volume of a sphere
 	double getVolume(){
@@ -28,8 +28,8 @@ public:
 
 	//For a given point (a,b,c) returns true if point is in the sphere, otherwise returns false
     //r^2 = (x-x0)^2 + (y-y0)^2 + (z-z0)^2
-	bool isInside(double a, double b, double c){
-		if((a-center.x)*(a-center.x) + (b-center.y)*(b-center.y)+(c-center.z)*(c-center.z) <= radius*radius)
+	bool isInside(Point p){
+		if((p.x()-center.x())*(p.x()-center.x()) + (p.y()-center.y())*(p.y()-center.y())+(p.z()-center.z())*(p.z()-center.z()) <= radius*radius)
 			return true;
 		else
 			return false;

@@ -9,6 +9,7 @@
 #define POINT_HH_
 
 #include <iostream>
+ using namespace std;
 class Point {
 public:
 	int _x, _y, _z;
