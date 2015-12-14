@@ -1,20 +1,17 @@
-/*
- * Point.hh
- *
- *  Created on: Dec 3, 2015
- *      Author: yue
- */
+//Authors: Carly Bean, Chris Coyle, Yue Liang
 
 #ifndef POINT_HH_
 #define POINT_HH_
 
 #include <iostream>
- using namespace std;
+using namespace std;
+
+
 class Point {
 public:
 	int _x, _y, _z;
 
-	Point(int x, int y, int z) : _x(x), _y(y), _z(z) { }
+	Point(int x=0, int y=0, int z=0) : _x(x), _y(y), _z(z) { }
 
 	int x() {
 		return _x;
