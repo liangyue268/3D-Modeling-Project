@@ -1,5 +1,5 @@
-3DModel.exe: main.o Cube.o Sphere.o Cylinder.o Transform3D.o
-	g++ main.o Cube.o Sphere.o Cylinder.o Transform3D.o -o 3DModel.exe
+3DModel.exe: main.o Cube.o Sphere.o Cylinder.o 
+	g++ main.o Cube.o Sphere.o Cylinder.o -o 3DModel.exe
 
 main.o: main.cc
 	g++ -c main.cc
@@ -57,12 +57,6 @@ Shape2D.hh: Shape.hh
 	
 Shape.hh: Point.hh
 	touch Shape.hh
-	
-Transform3D.o: Transform3D.cc
-	g++ -c Transform3D.cc
-
-Transform3D.cc: Transform3D.hh
-	touch Transform3D.cc
-	
+		
 Transform3D.hh: Shape3D.hh
 	touch Transform3D.hh
