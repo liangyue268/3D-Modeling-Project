@@ -17,28 +17,21 @@ public:
 	Cylinder(double r, double h, double orientation[], Color c, Point p = Point(0, 0, 0)) : Shape3D(p, c, orientation), radius(r), height(h) { }
 
 	//For a given point (A,B,C) returns true if point is in the cylinder, otherwise returns false
-	bool isInside(Point p) { //(x/r)^2 + (y/r)^2 = 1   //can't be const bc of point
-		if((p.x()/radius)*(p.x()/radius) + (p.y()/radius)*(p.y()/radius) <= 1 && (height/2) + center.z() <= p.z() <= center.z() - (height/2)) //how can we access Z since it is private. make x, y, z protected??
-			return true;
-		else
-			return false;
-	}
+	bool isInside(Point p); //(x/r)^2 + (y/r)^2 = 1   //can't be const bc of point
+	
+	
 
 	//Returns volume of a cylinder
-	double getVolume() { //V = pi*r^2*h
-		return PI*radius*radius*height; //PI is defined in shape.hh, is that the best place?
-	}
-
+	double getVolume(); //V = pi*r^2*h
+	
+	
 	//Returns surface area of a cylinder
-	double getArea() { //S = 2*pi*r*h + 2*pi*r^2
-		return 2*PI*radius*height + 2*PI*radius*radius;
-	}
+	double getArea(); //S = 2*pi*r*h + 2*pi*r^2
+		
 
 	//changes radius and height values to scale cylinder
-	void scale(double s) {
-		radius  = s*radius;
-		height = s*height;
-	}
+	void scale(double s);
+		
 };
 
 
