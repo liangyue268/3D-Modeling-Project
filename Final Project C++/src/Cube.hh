@@ -17,28 +17,11 @@ public:
 	Cube(double l, double w, double h, Color c, double ori[], Point p = Point(0, 0, 0)) : Shape3D(p, c, ori), length(l), width(w), height(h) {}
 
 	//this should work even for translated cubes but not sure about strangely oriented cubes
-	bool isInside(Point p){
-		if(abs(p.x() - center.x()) <= (length / 2) && abs(p.y() - center.y()) <= (width / 2) && abs(p.z() - center.z()) <= (height / 2)) {
-			return true;
-		}
-		else {
-			return false;
-		}
-	}
+	bool isInside(Point p);
+	double getVolume();
 
-	double getVolume() {
-		return length * width * height;
-	}
-
-	double getArea() {
-		return 2 * (length * width + length * height + width * height);
-	}
-
-	void scale(double s) {
-		length = s*length;
-		width = s*width;
-		height = s*height;
-	}
+	double getArea();
+	void scale(double s);
 /*
 	void print(const char* filename) {
 		//cout << "print cube." << '\n';
