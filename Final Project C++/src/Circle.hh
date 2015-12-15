@@ -1,9 +1,4 @@
-/*
- * Circle.hh
- *
- *  Created on: Dec 1, 2015
- *      Author: Class2015
- */
+//Authors: Carly Bean, Chris Coyle, Yue Liang
 
 #ifndef CIRCLE_HH_
 #define CIRCLE_HH_
@@ -14,9 +9,13 @@ using namespace std;
 
 
 class Circle : public Shape2D {
-
+private:
+public:
+	double radius;
+	Circle(double radius, int x, int y, Color c) : Shape2D(x, y, c), radius(radius) {}
+	double getArea();
 
 };
 
 
-#endif /* CIRCLE_HH_ */
+#endif
