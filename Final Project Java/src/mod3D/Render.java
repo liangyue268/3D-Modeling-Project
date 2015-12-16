@@ -20,6 +20,13 @@ import javax.media.j3d.TransformGroup;
 import javax.media.j3d.WakeupOnElapsedFrames;
 import processing.core.PVector;
 
+import javax.vecmath.Color3f;
+import javax.vecmath.Point3d;
+import javax.vecmath.Vector3d;
+
+
+
+
 public class Render {
 
 	Render(Shape3D[] d, int numShapes) {
