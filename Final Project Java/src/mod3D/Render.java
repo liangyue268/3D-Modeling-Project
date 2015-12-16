@@ -1,5 +1,23 @@
 package mod3D;
+import java.applet.Applet;
+import java.awt.BorderLayout;
+import java.awt.GraphicsConfiguration;
+import java.util.Enumeration;
 
+import javax.media.j3d.Alpha;
+import javax.media.j3d.Appearance;
+import javax.media.j3d.Background;
+import javax.media.j3d.Behavior;
+import javax.media.j3d.BoundingSphere;
+import javax.media.j3d.BranchGroup;
+import javax.media.j3d.Canvas3D;
+import javax.media.j3d.GeometryArray;
+import javax.media.j3d.Morph;
+import javax.media.j3d.QuadArray;
+import javax.media.j3d.Shape3D;
+import javax.media.j3d.Transform3D;
+import javax.media.j3d.TransformGroup;
+import javax.media.j3d.WakeupOnElapsedFrames;
 import processing.core.PVector;
 
 public class Render {
