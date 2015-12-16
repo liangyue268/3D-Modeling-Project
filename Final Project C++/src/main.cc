@@ -18,11 +18,11 @@ int main(){
 	Color c = 5;
 
 
-	double orienation [3]= {0.0,0.0,1.0};
+	double orientation[3]= {0.0,0.0,1.0};
 
-	Point center1 ( 1,1,1);
+	Point center1( 1,1,1);
 
-	Cube cube1 (length, width, height1, c, orientation, center1);
+	Cube cube1(length, width, height1, c, orientation, center1);
 
 			//Determine area and volume of cube
 			double areaCube1, volumeCube1;
@@ -41,7 +41,7 @@ int main(){
 
 	Point center2 ( 10,10,10);
 
-	Sphere sph1(radius1, orienation, c,center2 );
+	Sphere sph1(radius1, orientation, c,center2);
 
 	//Create a Cylinder Object
 
@@ -53,7 +53,7 @@ int main(){
 
 	// Transform Shape Objects
 
-	Shape3D d[3] = {cube1, sph1, cyl1};
+	Shape3D* d[3] = {&cube1, &sph1, &cyl1};
 
 	Transform3D t (d, 3);
 
