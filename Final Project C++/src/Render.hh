@@ -4,26 +4,20 @@ using namespace std;
 
 class Render {
 private:
+
+
 public:
 	//Constructor
-	Render(){
 
-	}
+
 
 	//Returns pointer to array of facets (traingles) that make up sphere
-	int*  rendSphere(){
-
-	}
+	Facet*  rendSphere(Sphere d);
 
 	//Returns pointer to array of facets (traingles) that make up cube
-	int* rendCube(){
-
-	}
+	Facet* rendCube();
 
 	//Returns pointer to array of facets (traingles) that make up cylinder
-	int* rendCylinder(){
-
-	}
-
+	Facet* rendCylinder();
 
 };

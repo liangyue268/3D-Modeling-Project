@@ -14,17 +14,13 @@ public:
 
 
 	//Constructor
-	Sphere(double r, double orientation[], Color c, Point p) : Shape3D(p , c, orientation), radius(r) { }
+	Sphere(double r, Color c, double orientation[], Point p) : Shape3D(p, c, orientation), radius(r) { }
 
 	//Returns volume of a sphere
-	double getVolume(){
-		return (4/3)*PI*radius*radius*radius;
-	}
+	double getVolume();
 
 	//Returns surface area of a sphere
-	double getArea(){
-		return 4*PI*radius*radius;
-	}
+	double getArea();
 
 	//For a given point (a,b,c) returns true if point is in the sphere, otherwise returns false
     //r^2 = (x-x0)^2 + (y-y0)^2 + (z-z0)^2
@@ -36,9 +32,7 @@ public:
 	}
 
 	//Changes radius of sphere to scale it
-	void scale(double s) {
-		radius = s * radius;
-	}
+	void scale(double s);
 
 };
 

@@ -15,7 +15,8 @@ private:
 //a Transform3D object is passed an array of Shape3D objects, upon which it will apply designated transformations
 //the purpose for this is to be able to apply designated changes to multiple Shape3D objects at once.
 public:
-	Transform3D(Shape3D* s[], int n) : n(n) {
+
+	Transform3D(Shape3D d[], int n) : n(n) {
 		this->d = new Shape3D*[n];
 		for(int i = 0; i < n; i++) {
 			this->d[i] = s[i];

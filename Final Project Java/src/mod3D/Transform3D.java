@@ -12,7 +12,7 @@ public class Transform3D {
 			
 			// Statement below was showing error. Check if its the correct way
 			// Scale(d[i], scale);
-			Scale((Sphere) d[i], scale);
+			Scale( (Sphere) d[i], scale);
 		}
 		
 	}

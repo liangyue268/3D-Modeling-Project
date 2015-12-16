@@ -24,15 +24,14 @@ public:
 			return false;
 	}
 
-	//Returns volume of a cylinder
-	double getVolume() { //V = pi*r^2*h
-		return PI*radius*radius*height; //PI is defined in shape.hh, is that the best place?
-	}
 
+	//Returns volume of a cylinder
+	double getVolume(); //V = pi*r^2*h
+	
+	
 	//Returns surface area of a cylinder
-	double getArea() { //S = 2*pi*r*h + 2*pi*r^2
-		return 2*PI*radius*height + 2*PI*radius*radius;
-	}
+	double getArea(); //S = 2*pi*r*h + 2*pi*r^2
+		
 
 	//changes radius and height values to scale cylinder
 	void scale(double s) {
