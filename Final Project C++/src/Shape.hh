@@ -25,7 +25,7 @@ public:
 	Shape(Point p,  Color c) : center(p), color(c) { }
 
 	//Method to retrieve a shape's color ---shouldn't need any more if color is public
-	Color getColor() const {
+	Color const getColor()  {
 		return color;
 	}
 

@@ -17,10 +17,10 @@ public:
 	Cube(double l, double w, double h, Color c, double ori[], Point p = Point(0, 0, 0)) : Shape3D(p, c, ori), length(l), width(w), height(h) {}
 
 	//this should work even for translated cubes but not sure about strangely oriented cubes
-	bool isInside(Point p);
-	double getVolume();
+	bool const isInside(Point p);
+	double const getVolume();
 
-	double getArea();
+	double const getArea();
 	void scale(double s);
 /*
 	void print(const char* filename) {

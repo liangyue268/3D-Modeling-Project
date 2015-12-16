@@ -1,7 +1,7 @@
 //Authoes: Carly Bean, Chris Coyle, Yue Liang
 
 #include "Cylinder.hh"
-bool Cylinder::isInside(Point p) { 
+bool const Cylinder::isInside(Point p) {
 	if((p.x()/radius)*(p.x()/radius) + (p.y()/radius)*(p.y()/radius) <= 1 && (height/2) + center.z() <= p.z() <= center.z() - (height/2)) //how can we access Z since it is private. make x, y, z protected??
 		return true;
 	else
@@ -9,11 +9,11 @@ bool Cylinder::isInside(Point p) {
 }
 
 
-double Cylinder::getVolume() {
+double const Cylinder::getVolume() {
 	return PI*radius*radius*height; 
 }
 
-double Cylinder::getArea() { 
+double const Cylinder::getArea() {
 	return 2*PI*radius*height + 2*PI*radius*radius;
 }
 
