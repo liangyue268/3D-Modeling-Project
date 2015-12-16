@@ -30,9 +30,8 @@ public class test extends PApplet{
 		PVector f1 = new PVector();
 		PVector f2 = new PVector();
 		PVector f3 = new PVector();
-		int col = 0;
 		stroke(255);
-		strokeWeight(3);
+		strokeWeight(2);
 		pushMatrix();
 		rotateX(rx);
 		rotateY(ry);
@@ -55,24 +54,8 @@ public class test extends PApplet{
 		}
 		popMatrix();
 
-		/*
-		 * background(0); noFill(); stroke(255); pushMatrix(); translate(width /
-		 * 2, height / 2);
-		 * 
-		 * // To move in X direction
-		 * 
-		 * //translate(width / 2 + moveX, height / 2); //moveX += 1;
-		 * 
-		 * rotate(x, x, y, z); //scale(x, y, z); sphere(100); x += (float) 0.01;
-		 * y += (float) 0.01; z += (float) 0.01; popMatrix();
-		 */
-
 	}
 
-	private void translate(double d, double e, int i) {
-		// TODO Auto-generated method stub
-
-	}
 
 	public static void main(String[] args) {
 		PApplet.main(new String[] { "mod3D.test" });

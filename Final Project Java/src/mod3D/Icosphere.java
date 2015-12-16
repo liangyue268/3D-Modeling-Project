@@ -93,8 +93,7 @@ public class Icosphere {
 
              norm(v12);
              norm(v23);
-             norm(v31);
-                              
+             norm(v31);               
              subdivide(v1, v12, v31, depth - 1);
              subdivide(v2, v23, v12, depth - 1);
              subdivide(v3, v31, v23, depth - 1);
