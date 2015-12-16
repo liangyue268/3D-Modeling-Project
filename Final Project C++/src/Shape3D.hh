@@ -20,9 +20,9 @@ public:
 		}
 	}
 //Each child of 3D shape should have the ability to return its volume and area:
-	virtual double getVolume() = 0;
+	virtual double const getVolume() = 0;
 
-	virtual double getArea() = 0;
+	virtual double const getArea() = 0;
 
 	//@return the intersect of this and that Shape3D
 	//virtual Shape3D intersect(Shape3D that) = 0;

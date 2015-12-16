@@ -1,7 +1,7 @@
 //Authors: Carly Bean, Chris Coyle, Yue Linag
 #include "Cube.hh"
 
-bool Cube::isInside(Point p) {
+bool const Cube::isInside(Point p) {
 	if(abs(p.x() - center.x()) <= (length / 2) && abs(p.y() - center.y()) <= (width / 2) && abs(p.z() - center.z()) <= (height / 2)) {
 		return true;
 	}
@@ -10,11 +10,11 @@ bool Cube::isInside(Point p) {
 	}
 }
 
-double Cube::getVolume(){
+double const Cube::getVolume(){
 	return length * width * height;
 }
 
-double Cube::getArea(){
+double const Cube::getArea(){
 	return 2 * (length * width + length * height + width * height);
 }
 
