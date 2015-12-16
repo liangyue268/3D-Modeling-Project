@@ -17,5 +17,7 @@
 	<classpathentry kind="lib" path="jogl-all-natives-windows-amd64.jar"/>
 	<classpathentry kind="lib" path="jogl-all-natives-windows-i586.jar"/>
 	<classpathentry kind="lib" path="jogl-all.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pratibha/Desktop/jav/project/j3d-core-1.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pratibha/Desktop/jav/project/vecmath-1.5.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
