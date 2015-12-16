@@ -24,7 +24,8 @@ import javax.vecmath.Color3f;
 import javax.vecmath.Point3d;
 import javax.vecmath.Vector3d;
 
-
+import com.sun.j3d.utils.applet.MainFrame;
+import com.sun.j3d.utils.universe.SimpleUniverse;
 
 
 public class Render {
