@@ -45,6 +45,7 @@ public:
 
 	virtual void scale(double s) = 0;
 
+
 	//each child of Shape3D should be able to determine is a point is inside or outside of itself.
 	virtual bool isInside(Point p) = 0;
 };
