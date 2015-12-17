@@ -35,7 +35,10 @@ public class Render {
 	}
 
 	int[] Rend(Cube c) {
-
+		Icoscube ico = new Icoscube();
+		PVector f1 = new PVector();
+		PVector f2 = new PVector();
+		PVector f3 = new PVector();
 		int e[] = {};
 
 		return e;
