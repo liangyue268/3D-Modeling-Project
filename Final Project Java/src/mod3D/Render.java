@@ -1,3 +1,5 @@
+//Authors: Raya Rahman & Pratibha Vishwakarma. 
+
 package mod3D;
 import java.applet.Applet;
 import java.awt.BorderLayout;
@@ -30,10 +32,14 @@ import com.sun.j3d.utils.universe.SimpleUniverse;
 
 public class Render {
 
+	//The render class returns an array of points which creates a 3D representation of Shape3D objects in the xyz plane as a sequence of triangles. 
+	
+	//the Render class is passed an array of Shape3D objects and the number of objects passed. 
 	Render(Shape3D[] d, int numShapes) {
 
 	}
-
+	
+	//returns an array of points which creates a 3D representation of Cube in the xyz plane as a sequence of triangles. 
 	int[] Rend(Cube c) {
 		Icocube ico = new Icocube();
 		PVector f1 = new PVector();
@@ -44,6 +50,7 @@ public class Render {
 		return e;
 	}
 
+	//returns an array of points which creates a 3D representation of Cylinder in the xyz plane as a sequence of triangles.
 	int[] Rend(Cylinder c) {
 
 		int e[] = {};
@@ -51,6 +58,7 @@ public class Render {
 		return e;
 	}
 
+	//returns an array of points which creates a 3D representation of Sphere in the xyz plane as a sequence of triangles.
 	static float[][] Rend(Sphere s) {
 		Icosphere ico = new Icosphere();
 		PVector f1 = new PVector();
