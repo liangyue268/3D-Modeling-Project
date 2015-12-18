@@ -1,5 +1,4 @@
-// Make sure you have a p3d to allow 3d images to work in the program
-
+//Authors: Raya Rahman & Pratibha Vishwakarma. 
 
 package mod3D;
 
