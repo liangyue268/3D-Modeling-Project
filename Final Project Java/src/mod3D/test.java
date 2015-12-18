@@ -46,7 +46,8 @@ public class test extends PApplet{
 		rotateY(ry);
 		
 		/// Shape for Sphere ///
-		/*
+		
+		///*
 		for(int i=0; i < sphereVerts.length; i++){
 			beginShape();
 			vertex(sphereVerts[i][0], sphereVerts[i][1], sphereVerts[i][2]);
@@ -54,11 +55,12 @@ public class test extends PApplet{
 			vertex(sphereVerts[i][6], sphereVerts[i][7], sphereVerts[i][8]);
 			endShape(CLOSE);
 		}
-		*/
+		//*/
+		
 		/// Shape for Sphere ///
 		
 		/// Shape for Cube ///
-		///*
+		/*
 		beginShape();
 		stroke(255, 0 ,0);
 		strokeWeight(2);
@@ -66,7 +68,7 @@ public class test extends PApplet{
 			vertex(cube_verts[i][0] * cube.side , cube_verts[i][1] * cube.side, cube_verts[i][2] *cube.side);
 		}
 		endShape();
-		//*/
+		*/
 		/// Shape for Cube ///
 		
 		popMatrix();
