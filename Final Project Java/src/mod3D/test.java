@@ -42,11 +42,11 @@ public class test extends PApplet{
 		pushMatrix();
 		stroke(0,255,0);
 		strokeWeight(2);
-		//rotateX(rx);
-		//rotateY(ry);
+		rotateX(rx);
+		rotateY(ry);
 		
 		/// Shape for Sphere ///
-		///*
+		/*
 		for(int i=0; i < sphereVerts.length; i++){
 			beginShape();
 			vertex(sphereVerts[i][0], sphereVerts[i][1], sphereVerts[i][2]);
@@ -54,7 +54,7 @@ public class test extends PApplet{
 			vertex(sphereVerts[i][6], sphereVerts[i][7], sphereVerts[i][8]);
 			endShape(CLOSE);
 		}
-		//*/
+		*/
 		/// Shape for Sphere ///
 		
 		/// Shape for Cube ///
