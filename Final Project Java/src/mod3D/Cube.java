@@ -10,6 +10,9 @@ import java.awt.Color;
 public class Cube extends Shape3D{
 
 	public float side;
+	public double length;
+	public double width;
+	public double height;
 	//Defines a cube by all parameters of a Shape3D along with length, width and height.
 	public Cube(float side, Color c, double orientation[], int center[] ){
 		
