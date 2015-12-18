@@ -6,7 +6,6 @@ import processing.core.PVector;
 public class test extends PApplet{
 
 	float x, y, z = 1;
-	Icosphere ico;
 
 	public void settings() {
 		// Make sure you have a p3d to allow 3d images to work in the program
@@ -14,14 +13,15 @@ public class test extends PApplet{
 	}
 
 	public void setup() {
-		ico = new Icosphere();
 		
 	}
 	
 	int moveX = 0;
 	int sphereCenter[] = {0,0,0};
 	int cubeCenter[] = {0,0,0};
+	
 	float sphereVerts[][] = Render.Rend(new Sphere(180, null, null, sphereCenter));
+	
 	Cube cube = new Cube(100, null, null, cubeCenter);
 	float cube_verts[][] = Render.Rend(cube);
 	
