@@ -25,7 +25,7 @@ public class test extends PApplet{
 	Cube cube = new Cube(100, null, null, cubeCenter);
 	float cube_verts[][] = Render.Rend(cube);
 	
-	
+	// Sphere and Cube Implemented
 	public void draw() {
 
 		float rx = frameCount / 800.f;
