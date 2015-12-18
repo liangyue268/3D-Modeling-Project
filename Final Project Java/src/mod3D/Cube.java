@@ -3,25 +3,19 @@ import java.awt.Color;
 
 public class Cube extends Shape3D{
 
-	public double length, width, height;
+	public float side;
 	
-	public Cube(double l, double w, double h, Color c, double orientation[], int center[] ){
+	public Cube(float side, Color c, double orientation[], int center[] ){
 		
 		super(center, c, orientation);
-		
-		length = l;
-		width = 1;
-		height = h;
+		this.side = side;
 		
 	}
-	
-	
-	double getVolume() {
-		return length * width * height;
+	float getVolume() {
+		return this.side  * this.side  * this.side;
 	}
 	
-	double getArea() {
-		return 2 * (length * width + length * height + width * height);
+	float getArea() {
+		return 2 * (this.side  * this.side + this.side  * this.side  + this.side  * this.side);
 	}
-	//testagain
 }

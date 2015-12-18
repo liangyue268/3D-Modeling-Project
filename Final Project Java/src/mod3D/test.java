@@ -18,22 +18,30 @@ public class test extends PApplet{
 		
 	}
 
+	
+	
+	
+	
 	int moveX = 0;
-
 	int sphereCenter[] = {0,0,0};
-	float sphereVerts[][] = Render.Rend(new Sphere(150, null, null, sphereCenter));
+	int cubeCenter[] = {0,0,0};
+	float sphereVerts[][] = Render.Rend(new Sphere(180, null, null, sphereCenter));
+	Cube cube = new Cube(100, null, null, cubeCenter);
+	float cube_verts[][] = Render.Rend(cube);
 	public void draw() {
 
 		float rx = frameCount / 800.f;
 		float ry = frameCount / 430.f;
 		
-		
 		translate(width / 2, height / 2);
 		background(0);
 		noFill();
-		stroke(255);
-		strokeWeight(2);
+		
+		
+		/// Matrix for 
 		pushMatrix();
+		stroke(0,255,0);
+		strokeWeight(2);
 		rotateX(rx);
 		rotateY(ry);
 		for(int i=0; i < sphereVerts.length; i++){
@@ -43,10 +51,19 @@ public class test extends PApplet{
 			vertex(sphereVerts[i][6], sphereVerts[i][7], sphereVerts[i][8]);
 			endShape(CLOSE);
 		}
-		
-		
 		popMatrix();
-
+		
+		
+		pushMatrix();
+		beginShape();
+		stroke(255, 0 ,0);
+		strokeWeight(2);
+		for(int i = 0; i < cube_verts.length ; i++){
+			vertex(cube_verts[i][0] * cube.side , cube_verts[i][1] * cube.side, cube_verts[i][2] *cube.side);
+		}
+		endShape();
+		popMatrix();
+		
 	}
 
 
