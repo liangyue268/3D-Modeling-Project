@@ -39,8 +39,8 @@ public class test extends PApplet{
 		pushMatrix();
 		stroke(0,255,0);
 		strokeWeight(2);
-		rotateX(rx);
-		rotateY(ry);
+		//rotateX(rx);
+		//rotateY(ry);
 		
 		/// Shape for Sphere ///
 		///*
